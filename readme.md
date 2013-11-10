@@ -23,29 +23,6 @@ purchasable upgrades
 		ECO volume D : Queen's Gambit Declined, Queen's Gambit Accepted, Slav Defence, Tarrasch Defence, Grünfeld Defence, Queens Pawn
 		ECO volume E : Nimzo-Indian Defence, Queen's Indian Defence, King's Indian Defence, Catalan Opening, Bogo-Indian Defence
 
-pieces per click
-	pawn - 1
-	knight - 2
-	bishop - 4
-	rook - 8
-	queen - 16
-	king - 32
-
-display quotes about chess
-
-https://en.wikipedia.org/wiki/Pawn_%28chess%29#History
-In medieval chess, an attempt was made to make the pieces more interesting, each file's pawn being given the name of a commoner's occupation. On the board, from left to right, those titles were:
-	Gambler and other "lowlifes", also messengers (in the left-most file, that direction being literally sinister)
-	City guard or policeman (in front of a knight, as they trained city guards in real life)[3]
-	Innkeeper (bishop)
-	Merchant/Moneychanger (always before the king, whether or not he is to the left or right of the queen, which depends on the color of the pieces)
-	Doctor (always the queen's pawn)
-	Weaver/Clerk (in front of the bishop, for whom they wove or clericked)
-	Blacksmith (in front of a knight, as they care for the horses)
-	Worker/Farmer (in front of a castle, for which they worked)[4] - first achievement, "Start Farming!"
-
-
-
 Purchase Systems
 	Initial Builds
 		Chess Pieces
@@ -58,24 +35,29 @@ Purchase Systems
 			when next piece purchased from this stack, update click picture to that piece
 
 	Upgrades
-		Pawn Formations
+		Pawn Formations - once you purchase one of each pawn formations unlock. these provide modifiers for the pawn builds
 			Caro
 			Slav
 			Sicilian - Scheveningen
-		Opening Theories
+		Opening Theories - once pawn, knight, and bishop are purchased unlock opening theories. these provide modifiers for those respective builds 
 			English Opening
 			Benoni Defence
-		Middlegame Strategy
-		End Game 
+		Middlegame Strategy - unlocks after rook and queen purchase, same modifiers
+		End Game - unlocks after king purchase, same modifiers
 
-		Chess Pieces
+		Chess Pieces - upgrade pieces per click
 			Plastic
 			Tournament
 			Hardwood
 			Marble
-		Chess Board
+		Chess Board - upgrade pieces per click
 			Vinyl
 			Plastic
 			Glass
 			Wood
 			Stone
+
+
+Achievements
+	Start Farming! - purchase first farmer
+	Long live the King, baby! - purchase first King
