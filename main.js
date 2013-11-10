@@ -84,7 +84,10 @@ function initializeDomEvents() {
 function updateScreen() {
 	// updates chess pieces clicked
 	chessPiecesClicked += (chessPiecesPerSecond / 10);
-	chessPiecesClickedOnScreen.innerHTML = addCommas(chessPiecesClicked.toFixed(0));
+
+	chessPiecesClickedFormatted = addCommas(chessPiecesClicked.toFixed(0))
+	chessPiecesClickedOnScreen.innerHTML = chessPiecesClickedFormatted;
+	window.parent.document.title = chessPiecesClickedFormatted + " - Chess Clicker";
 	//chessPiecesClickedOverflow = checkOverflow(chessPiecesClickedOnScreen);
 
 	/*
