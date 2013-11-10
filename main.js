@@ -272,28 +272,28 @@ var upgrades = [
 	new Upgrade(id = "rookBastion",
 				name = "Bastion's Keep",
 				description = "Clicks 10,000 times every second.",
-				baseCost = 120000,
+				baseCost = 1200000,
 				clicksPerSecond = 15000,
 				maxClicksPerSecond = 1000000000000 ),
 
 	new Upgrade(id = "rookCastle",
 				name = "Castle Proper",
 				description = "Clicks 20,000 times every second.",
-				baseCost = 200000,
+				baseCost = 2000000,
 				clicksPerSecond = 30000,
 				maxClicksPerSecond = 1000000000000 ),
 
 	new Upgrade(id = "queen",
 				name = "The Queen",
 				description = "Clicks 50,000 times every second.",
-				baseCost = 500000,
+				baseCost = 5000000,
 				clicksPerSecond = 80000,
 				maxClicksPerSecond = 1000000000000 ),
 
 	new Upgrade(id = "king",
 				name = "The King",
 				description = "Clicks 250,000 times every second.",
-				baseCost = 10000000,
+				baseCost = 50000000,
 				clicksPerSecond = 250000,
 				maxClicksPerSecond = 1000000000000 )
 ];
