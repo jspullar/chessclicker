@@ -55,6 +55,7 @@ Purchase Systems
 			2 Rooks
 			1 Queen
 			1 King
+			when next piece purchased from this stack, update click picture to that piece
 
 	Upgrades
 		Pawn Formations
