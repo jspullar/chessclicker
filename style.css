@@ -1,0 +1,154 @@
+body {
+	font-family: Futura, "Gill Sans", "Century Gothic", "Dejavu Sans", "Trebuchet MS", sans-serif;
+	font-size: 18pt;
+	color: #524F50;
+
+	padding: 20px;
+}
+
+#wrapper {
+	width: 750px;
+}
+
+#chessPiecesClicked {
+	font-size: 2em;
+	line-height: 1px;
+	text-align: center;
+}
+
+#clickDiv {
+	display: inline-block;
+	width: 200px;
+    padding: 10px 50px;
+    border: solid 2px #758078;
+    border-radius: 1em;
+}
+
+#chessPiece img {
+	display: block;
+	margin: auto;
+}
+
+#leftMain {
+	float: left;
+	margin: 0px auto;
+	width: 200px;
+}
+
+#upgrades {
+	float: right;
+}
+
+.upgrade {
+	display: block;
+	position: relative;
+	margin: 10px 0;
+	border: solid 2px #699DFF;
+	color: #FFFFFF;
+	background-color: #699DFF;
+    border-radius: 1em;
+
+    cursor: default;
+}
+
+.inactiveUpgrade {
+	display: block;
+	margin: 10px 0;
+	border: solid 2px #C7C7C7;
+	color: #758078;
+	background-color: #C7C7C7;
+    border-radius: 1em;
+
+    cursor: default;
+}
+
+.inactive {
+	border: solid 2px #C7C7C7;
+	color: #758078;
+	background-color: #C7C7C7;
+}
+
+.upgrade h3 {
+	margin-left: 10px;
+	
+	font-size: 18pt;
+	line-height: 5px;
+}
+
+.upgrade h3 span {
+	float: right;
+	margin-right: 10px;
+}
+
+.upgrade h3 p {
+	line-height: 1px;
+}
+
+.upgrade:active {
+	top: 5px;
+}
+
+.inactiveUpgrade {
+	display: block;
+	margin: 10px 0;
+	border: solid 2px #C7C7C7;
+	color: #758078;
+	background-color: #C7C7C7;
+    border-radius: 1em;
+
+    cursor: default;
+}
+
+.inactiveUpgrade h3 {
+	margin-left: 10px;
+	
+	font-size: 18pt;
+	line-height: 5px;
+}
+
+.inactiveUpgrade h3 span {
+	float: right;
+	margin-right: 10px;
+}
+
+.inactiveUpgrade h3 p {
+	line-height: 1px;
+}
+
+.upgradesOwned {
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+#stats {
+	font-size: 10pt;
+	width: 280px;
+
+	background-color: #8CFC86;
+	border: solid 2px #8CFC86;
+    border-radius: 1em;
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+
+#stats h3 {
+	line-height: 1px;
+}
+
+#stats p {
+	line-height: 5px;
+}
+
+#stats hr {
+	border: 0;
+    height: 1px;
+    background: #8CFC86;
+    background-image: -webkit-linear-gradient(left, #524F50, #727472, #8CFC86); 
+    background-image:    -moz-linear-gradient(left, #524F50, #727472, #8CFC86); 
+    background-image:     -ms-linear-gradient(left, #524F50, #727472, #8CFC86); 
+    background-image:      -o-linear-gradient(left, #524F50, #727472, #8CFC86); 
+}
+
+#achievements {
+	float: bottom;
+}
