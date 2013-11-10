@@ -18,8 +18,7 @@ var totalPiecesSpentOnScreen;
 var upgradeCost;
 var upgradesOwned;
 
-function addCommas(nStr)
-{
+function addCommas(nStr) {
 	nStr += '';
 	x = nStr.split('.');
 	x1 = x[0];
@@ -44,6 +43,20 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(initializeDomEvents);
+
+// Borrowed from http://stackoverflow.com/questions/143815/how-to-determine-using-javascript-if-html-element-has-overflowing-content/143889#143889
+function checkOverflow(el) {
+   var curOverflow = el.style.overflow;
+   if ( !curOverflow || curOverflow === "visible" )
+      el.style.overflow = "hidden";
+
+   var isOverflowing = el.clientWidth < el.scrollWidth 
+      || el.clientHeight < el.scrollHeight;
+
+   el.style.overflow = curOverflow;
+
+   return isOverflowing;
+}
 
 function initializeDomEvents() {
 	chessPiece = document.getElementById('chessPiece');
@@ -72,6 +85,13 @@ function updateScreen() {
 	// updates chess pieces clicked
 	chessPiecesClicked += (chessPiecesPerSecond / 10);
 	chessPiecesClickedOnScreen.innerHTML = addCommas(chessPiecesClicked.toFixed(0));
+	//chessPiecesClickedOverflow = checkOverflow(chessPiecesClickedOnScreen);
+
+	/*
+	if (chessPiecesClickedOverflow) {
+		chessPiecesClickedOnScreen.style.setProperty("font-size", parseFloat(window.getComputedStyle(chessPiecesClickedOnScreen, 'font-size').getPropertyValue('font-size')) - 1 + "px");
+	}
+	*/
 
 	// updates total per second	
 	chessPiecesPerSecondOnScreen.innerHTML = "Per Second: " + addCommas(chessPiecesPerSecond.toFixed(1));
@@ -117,6 +137,7 @@ function drawUpgrades() {
 		upgradeDescription.className = "upgradeDescription";
 		upgradeDescription.innerHTML = upgrades[i].description;
 
+		// Display number of purchased upgrades
 		upgradesOwned = document.createElement("span");
 		upgradesOwned.className = "upgradesOwned";
 		upgradesOwned.innerHTML = "Owned: " + upgrades[i].numberOwned;
@@ -168,22 +189,29 @@ var upgrades = [
 	new Upgrade(id = "pawnDoubleForward",
 				name = "Pawn Double Forward",
 				description = "Clicks once every 5 seconds.",
-				baseCost = 20,
+				baseCost = 50,
 				clicksPerSecond = 0.2,
+				maxClicksPerSecond = 1000000000000 ),
+
+	new Upgrade(id = "enPassant",
+				name = "En Passant",
+				description = "Clicks 10 times every second.",
+				baseCost = 1000,
+				clicksPerSecond = 10,
 				maxClicksPerSecond = 1000000000000 ),
 
 	new Upgrade(id = "knightAdvance",
 				name = "Knight Advance",
-				description = "Clicks 10 times every second.",
-				baseCost = 100,
-				clicksPerSecond = 10,
+				description = "Clicks 20 times every second.",
+				baseCost = 2500,
+				clicksPerSecond = 20,
 				maxClicksPerSecond = 1000000000000 ),
 
 	new Upgrade(id = "bishopAdvance",
 				name = "Bishop Advance",
-				description = "Clicks 20 times every second.",
-				baseCost = 500,
-				clicksPerSecond = 20,
+				description = "Clicks 50 times every second.",
+				baseCost = 4000,
+				clicksPerSecond = 35,
 				maxClicksPerSecond = 1000000000000 ),
 ];
 
