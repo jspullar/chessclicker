@@ -11,12 +11,6 @@ thing to click
 	Start with pawn on screen
 		user can only click on it
 
-At 15 clicks user can purchase first upgrade
-
-need to track clicks and pieces
-	clicks for stats
-	pieces are used to make purchases and deplete
-
 purchasable upgrades
 	chess pieces (pawn, knight, bishop, rook, queen, king)
 	chess moves (pawn, bishop, knight, rook, queen, king, en passant, promotion, castling, threefold repetition)
@@ -28,17 +22,6 @@ purchasable upgrades
 		ECO volume C : Ruy Lopez, French Defence, Petroff Defence, King's Gambit, Philidor Defence, Giuoco Piano, Two Knights Defence, Scotch Game
 		ECO volume D : Queen's Gambit Declined, Queen's Gambit Accepted, Slav Defence, Tarrasch Defence, Grünfeld Defence, Queens Pawn
 		ECO volume E : Nimzo-Indian Defence, Queen's Indian Defence, King's Indian Defence, Catalan Opening, Bogo-Indian Defence
-
-display statistics
-	pieces clicked
-	pieces spent
-
-create class for upgrades
-	all upgrades should inherit from
-	rate of cost increase
-	hide/display
-	purchase upgrade
-	update on screen
 
 pieces per click
 	pawn - 1
@@ -59,4 +42,39 @@ In medieval chess, an attempt was made to make the pieces more interesting, each
 	Doctor (always the queen's pawn)
 	Weaver/Clerk (in front of the bishop, for whom they wove or clericked)
 	Blacksmith (in front of a knight, as they care for the horses)
-	Worker/Farmer (in front of a castle, for which they worked)[4]
+	Worker/Farmer (in front of a castle, for which they worked)[4] - first achievement, "Start Farming!"
+
+
+
+Purchase Systems
+	Initial Builds
+		Chess Pieces
+			8 Pawns
+			2 Knight
+			2 Bishop
+			2 Rooks
+			1 Queen
+			1 King
+
+	Upgrades
+		Pawn Formations
+			Caro
+			Slav
+			Sicilian - Scheveningen
+		Opening Theories
+			English Opening
+			Benoni Defence
+		Middlegame Strategy
+		End Game 
+
+		Chess Pieces
+			Plastic
+			Tournament
+			Hardwood
+			Marble
+		Chess Board
+			Vinyl
+			Plastic
+			Glass
+			Wood
+			Stone
